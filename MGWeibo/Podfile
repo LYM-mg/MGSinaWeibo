@@ -1,0 +1,8 @@
+platform :ios, '8.0'
+use_frameworks!
+
+pod 'SVProgressHUD', '~> 2.0-beta'
+pod 'AFNetworking', '~> 3.0.0-beta.1'
+pod 'SnapKit', '~> 0.19.1'
+pod 'SDWebImage'
+pod 'KILabel', '~> 1.0.1'

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="VEB-QM-2gI">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--首页-->
+        <scene sceneID="9ID-cN-7Ff">
+            <objects>
+                <tableViewController id="Ll2-fE-8J6" customClass="MGHomeViewController" customModule="MGWeibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="1" sectionHeaderHeight="28" sectionFooterHeight="28" id="orO-kr-6Xk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="pictureCellIdentifier" id="Olh-WR-xef">
+                                <rect key="frame" x="0.0" y="92" width="600" height="1"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Olh-WR-xef" id="IGa-z6-OZo">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Ll2-fE-8J6" id="FcG-47-PaV"/>
+                            <outlet property="delegate" destination="Ll2-fE-8J6" id="bXr-R4-LpF"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="首页" id="tDt-l4-R1j"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zZI-Kj-ZRX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1449" y="-2107"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="eNd-iN-fqi">
+            <objects>
+                <navigationController id="VEB-QM-2gI" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" id="rjo-NS-enB"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ymh-Tx-jI9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ll2-fE-8J6" kind="relationship" relationship="rootViewController" id="6cZ-vq-Ikp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mhe-TC-6CX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2298" y="-2107"/>
+        </scene>
+    </scenes>
+</document>
